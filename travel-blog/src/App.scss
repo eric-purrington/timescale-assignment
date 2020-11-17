@@ -24,7 +24,7 @@ $medium-breakpoint: 960px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(245, 245, 245);
+  background-color: $primary-light;
 
   .brand {
     p {
@@ -56,13 +56,13 @@ $medium-breakpoint: 960px;
   }
 
   .about {
-    background-color: #1E90FF;
+    background-color: $primary;
     padding: 10px;
     color: white;
     border-radius: 5px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: $small-breakpoint) {
     .brand p {
       display: none;
     }
@@ -83,21 +83,18 @@ $medium-breakpoint: 960px;
   flex-wrap: wrap;
   
   .headshot {
-    height: 250px;
-    width: 250px;
-    border-radius: 125px;
+    height: $profile-image-width;
+    width: $profile-image-width;
+    border-radius: 150px;
     margin: 15px;
   }
 
   .postContainer {
     width: 600px;
+    padding: 20px;
   }
 
-  @media only screen and (max-width: 600px) {
-    .postContainer {
-      padding: 20px;
-    }
-
+  @media only screen and (max-width: $small-breakpoint) {
     .headshot {
       height: 150px;
       width: 150px;
@@ -111,7 +108,7 @@ $medium-breakpoint: 960px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #1E90FF;
+  background-color: $primary;
   color: white;
   margin-top: 50px;
 }
