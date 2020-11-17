@@ -18,3 +18,102 @@ $medium-breakpoint: 960px;
     box-sizing: border-box;
   }
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(245, 245, 245);
+
+  .brand {
+    p {
+      font-style: italic;
+      margin: 5px;
+    }
+    h2 {
+      padding: 0px;
+      margin: 5px;
+      font-weight: 400;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      padding: 10px;
+      
+      a {
+        text-decoration: none;
+        color: black;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .about {
+    background-color: #1E90FF;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .brand p {
+      display: none;
+    }
+  }
+}
+
+.heroImg {
+  display: block;
+  margin: 0px auto 20px;
+  width: 90%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  .headshot {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    margin: 15px;
+  }
+
+  .postContainer {
+    width: 600px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .postContainer {
+      padding: 20px;
+    }
+
+    .headshot {
+      height: 150px;
+      width: 150px;
+      border-radius: 75px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1E90FF;
+  color: white;
+  margin-top: 50px;
+}
+
+
